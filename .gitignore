@@ -1,0 +1,8 @@
+*.log
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+pam-entitlement.yaml
+pam-entitlement-update.yaml
