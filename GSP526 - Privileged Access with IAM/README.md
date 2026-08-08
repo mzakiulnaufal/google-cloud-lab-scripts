@@ -21,12 +21,10 @@ The workflow uses two lab personas:
 | Initial maximum duration | `10 hours` |
 | Updated maximum duration | `4 hours` |
 | Request duration | `4 hours` |
-| Requester | `student-01-51ac5fa5f91a@qwiklabs.net` |
-| Approver | `student-02-5434ff13e427@qwiklabs.net` |
 | Required approvers | `1` |
 | Requester justification | Not required by entitlement |
 
-The identities above are temporary Google Cloud Skills Boost lab accounts. Do not use them outside the lab session and do not commit passwords, tokens, or other credentials.
+The lab identities are temporary Google Cloud Skills Boost accounts. Use the credentials provided by the active lab session. Do not commit passwords, tokens, or other credentials.
 
 ## Prerequisites
 
@@ -50,10 +48,9 @@ The scripts in this repository match the working files in this folder.
 
 ```text
 PRIMARY USER
-student-01-51ac5fa5f91a@qwiklabs.net
         |
         v
-./primary.sh
+Copy and paste the contents of primary.sh into Google Cloud Shell
         |
         +--> Task 1: Enable PAM API + PAM service-agent role
         |
@@ -71,10 +68,9 @@ student-01-51ac5fa5f91a@qwiklabs.net
                       |
                       v
 SECONDARY USER
-student-02-5434ff13e427@qwiklabs.net
         |
         v
-./secondary.sh
+Copy and paste the contents of secondary.sh into Google Cloud Shell
         |
         +--> Task 4B: Approve pending grant
         |             Grant -> ACTIVE
@@ -90,7 +86,7 @@ student-02-5434ff13e427@qwiklabs.net
 PRIMARY USER
         |
         v
-./cleanup.sh
+Copy and paste the contents of cleanup.sh into Google Cloud Shell
         |
         +--> Task 6: Delete pam-entitlement
         |
@@ -103,12 +99,7 @@ PRIMARY USER
 
 ### 1. Primary user
 
-Sign in to Google Cloud Shell as the primary lab account and run:
-
-```bash
-chmod +x primary.sh
-./primary.sh
-```
+Open [`primary.sh`](./primary.sh) in GitHub, copy the **entire contents of the file**, and paste them into Google Cloud Shell while signed in as the primary lab user.
 
 The script performs Tasks 1-3 and creates the grant request for Task 4A.
 
@@ -118,14 +109,9 @@ After Task 3 is updated to 4 hours, click **Check my progress** again before con
 
 ### 2. Secondary user
 
-Open a new private/incognito browser window and sign in to Google Cloud as the secondary lab account.
+Open a new private/incognito browser window and sign in to Google Cloud as the secondary lab user.
 
-In the secondary user's Cloud Shell, run:
-
-```bash
-chmod +x secondary.sh
-./secondary.sh
-```
+Open [`secondary.sh`](./secondary.sh) in GitHub, copy the **entire contents of the file**, and paste them into the secondary user's Google Cloud Shell.
 
 The script finds the pending grant, approves it, waits for the grant to become `ACTIVE`, then pauses so Task 4 can be checked. After Task 4 is green, it revokes the grant and waits for the state to become `REVOKED`.
 
@@ -133,12 +119,9 @@ Click **Check my progress** for Task 4 before proceeding with the revoke operati
 
 ### 3. Cleanup and audit logs
 
-Return to the primary-user Cloud Shell and run:
+Return to the primary-user Cloud Shell.
 
-```bash
-chmod +x cleanup.sh
-./cleanup.sh
-```
+Open [`cleanup.sh`](./cleanup.sh) in GitHub, copy the **entire contents of the file**, and paste them into Google Cloud Shell.
 
 The cleanup script verifies that no active/in-progress grant remains, deletes `pam-entitlement`, and queries the Privileged Access Manager audit logs for the entitlement lifecycle.
 
@@ -196,7 +179,7 @@ The secondary user revokes the active grant. The grant should become `REVOKED`.
 ## Notes
 
 - These scripts are intended for the GSP526 lab environment.
-- The primary and secondary identities are lab-specific temporary accounts.
+- The lab identities are temporary and should be taken from the active lab session.
 - Do not store lab passwords, access tokens, service-account keys, or other secrets in the repository.
 - The scripts validate the active account before making IAM/PAM changes.
 - The scripts use the active Cloud Shell project, so a Project ID does not need to be hardcoded.
