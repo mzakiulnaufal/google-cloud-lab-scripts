@@ -1,4 +1,4 @@
-# Google Cloud Lab Scripts
+# Google Cloud Skills Scripts
 
 Working automation scripts for Google Cloud Skills Boost labs and challenge labs.
 
