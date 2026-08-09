@@ -22,7 +22,7 @@ Each lab folder contains its own README and executable scripts.
 
 | Code | Skill | Status |
 | --- | --- | --- |
-| GSP526 | [Privileged Access with IAM](./GSP526%20-%20Privileged%20Access%20with%20IAM) | Working |
+| GSP526 | [Privileged Access with IAM](./GSP526%20-%20Privileged%20Access%20with%20IAM) | Needs Testing |
 | GSP528 | [Connecting Cloud Networks with NCC](./GSP528%20-%20Connecting%20Cloud%20Networks%20with%20NCC) | Working |
 | GSP1049 | [Loading Data into Cloud Spanner](./GSP1049%20-%20Loading%20Data%20into%20Cloud%20Spanner) | Working |
 
