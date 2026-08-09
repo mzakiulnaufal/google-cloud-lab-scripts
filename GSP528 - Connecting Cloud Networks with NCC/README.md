@@ -40,28 +40,27 @@ No lab username, Project ID, API key, access token, service-account key, or part
 
 ## Usage
 
-### Fastest method
+### Option 1 — Quick Run from GitHub
 
-Open **Cloud Shell** using the temporary lab account, then run:
+Open Cloud Shell using the temporary Skills Boost account, then run:
 
 ```bash
-curl -fsSL 'https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP528%20-%20Connecting%20Cloud%20Networks%20with%20NCC/GSP528.sh' | bash
+bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP528%20-%20Connecting%20Cloud%20Networks%20with%20NCC/GSP528.sh")
 ```
 
-### Upload script from local machine
+### Option 2: Manual Run (Upload to Cloud Shell)
 
-If you downloaded `GSP528.sh` to your computer, upload the file to Google Cloud Shell using **Upload** in the Cloud Shell menu. After the upload finishes, make the script executable and run it:
+If you prefer uploading and running the script manually:
+
+1. Download [`GSP528.sh`](./GSP528.sh) to your local computer.
+2. Open **Cloud Shell** in the Google Cloud Console.
+3. Click the **More** menu (three dots `⋮` at the top right of the Cloud Shell toolbar) and select **Upload file**.
+4. Select `GSP528.sh` to upload it to your Cloud Shell home directory.
+5. Execute the script in Cloud Shell:
 
 ```bash
 chmod +x GSP528.sh
 ./GSP528.sh
-```
-
-If the file was uploaded to your Cloud Shell home directory but you are currently in another directory, run:
-
-```bash
-chmod +x ~/GSP528.sh
-~/GSP528.sh
 ```
 
 The script performs all three scored tasks in one run. After it finishes successfully, click **Check my progress** for Task 1, Task 2, and Task 3.

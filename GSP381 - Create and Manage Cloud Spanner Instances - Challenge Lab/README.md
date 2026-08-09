@@ -27,9 +27,9 @@ The script completes the grader-visible tasks sequentially, automatically detect
 
 ## Usage
 
-### Option 1: Quick Run (Cloud Shell)
+### Option 1 — Quick Run from GitHub
 
-Open **Cloud Shell** using the temporary lab account, then run:
+Open Cloud Shell using the temporary Skills Boost account, then run:
 
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP381%20-%20Create%20and%20Manage%20Cloud%20Spanner%20Instances%20-%20Challenge%20Lab/gsp381.sh")

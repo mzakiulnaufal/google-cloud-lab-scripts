@@ -45,9 +45,9 @@ This ordering is intentional. Task 4 and Task 5 schema changes are not pre-creat
 
 ## Usage
 
-### Option 1: Quick Run (Cloud Shell)
+### Option 1 — Quick Run from GitHub
 
-Open **Cloud Shell** using the temporary lab account, then run:
+Open Cloud Shell using the temporary Skills Boost account, then run:
 
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP1050%20-%20Spanner%20-%20Defining%20Schemas%20and%20Understanding%20Query%20Plans/gsp1050.sh")

@@ -46,9 +46,9 @@ A Task-5-only recovery script is also included at `recovery/resume-task5.sh`.
 
 ## Usage
 
-### Option 1: Quick Run (Cloud Shell)
+### Option 1 — Quick Run from GitHub
 
-Open **Cloud Shell** using the temporary lab account, then run:
+Open Cloud Shell using the temporary Skills Boost account, then run:
 
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP1049%20-%20Loading%20Data%20into%20Cloud%20Spanner/gsp1049.sh")

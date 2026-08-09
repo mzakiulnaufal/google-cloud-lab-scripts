@@ -29,9 +29,9 @@ The script is designed for Google Cloud Shell and focuses on completing the grad
 
 ## Usage
 
-### Option 1: Quick Run (Cloud Shell)
+### Option 1 — Quick Run from GitHub
 
-Open **Cloud Shell** using the temporary lab account, then run:
+Open Cloud Shell using the temporary Skills Boost account, then run:
 
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP1048%20-%20Cloud%20Spanner%20Database%20Fundamentals/GSP1048.sh")
