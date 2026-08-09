@@ -46,13 +46,23 @@ A Task-5-only recovery script is also included at `recovery/resume-task5.sh`.
 
 ## Usage
 
+### Option 1: Quick Run (Cloud Shell)
+
 Open **Cloud Shell** using the temporary lab account, then run:
 
 ```bash
 bash <(curl -fsSL "https://raw.githubusercontent.com/mzakiulnaufal/google-cloud-lab-scripts/main/GSP1049%20-%20Loading%20Data%20into%20Cloud%20Spanner/gsp1049.sh")
 ```
 
-Or run locally:
+### Option 2: Manual Run (Upload to Cloud Shell)
+
+If you prefer uploading and running the script manually:
+
+1. Download [`gsp1049.sh`](./gsp1049.sh) to your local computer.
+2. Open **Cloud Shell** in the Google Cloud Console.
+3. Click the **More** menu (three dots `⋮` at the top right of the Cloud Shell toolbar) and select **Upload file**.
+4. Select `gsp1049.sh` to upload it to your Cloud Shell home directory.
+5. Execute the script in Cloud Shell:
 
 ```bash
 chmod +x gsp1049.sh
