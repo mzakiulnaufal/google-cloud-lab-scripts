@@ -22,7 +22,6 @@ Each lab folder contains its own README and executable scripts.
 
 | Code | Skill | Status |
 | --- | --- | --- |
-| GSP081 | [Cloud Run Functions Qwik Start - Console](./GSP081%20-%20Cloud%20Run%20Functions%20Qwik%20Start%20-%20Console) | Working |
 | GSP381 | [Create and Manage Cloud Spanner Instances: Challenge Lab](./GSP381%20-%20Create%20and%20Manage%20Cloud%20Spanner%20Instances%20-%20Challenge%20Lab) | Working |
 | GSP526 | [Privileged Access with IAM](./GSP526%20-%20Privileged%20Access%20with%20IAM) | Needs Testing |
 | GSP528 | [Connecting Cloud Networks with NCC](./GSP528%20-%20Connecting%20Cloud%20Networks%20with%20NCC) | Working |
